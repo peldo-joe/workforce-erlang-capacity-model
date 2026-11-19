@@ -7,6 +7,7 @@ High-volume service operations face severe intraday arrival volatility where sim
 1. Audits omnichannel intake mix (`ONLINE`, `MOBILE`, `PHONE`) and isolates the top call drivers hitting synchronous voice agents.
 2. Engineers a 24-hour intraday arrival profile comparing **Average Daily Demand** vs. **Peak Surge Demand**.
 3. Runs an automated **Erlang C Poisson Queuing Solver** across all 24 hours (`300s` AHT, `25%` shrinkage, `80%` answered within `20s`) to output exact hourly FTE schedules and quantify how **25% AI Voice Triage Deflection** absorbs peak demand surges without adding headcount.
+<img width="920" height="473" alt="image" src="https://github.com/user-attachments/assets/e7aa2853-ba48-40f4-bdc1-143e1e8a9882" />
 
 ## 2. Key Operational Findings (50,000 Live Service Requests)
 * **Channel Mix:** While `ONLINE` (**55.8%**) and `MOBILE` (**19.0%**) handle ~75% of total volume, **`PHONE` still accounts for 19.4% (`9,688` synchronous voice calls)** requiring real-time agent staffing.
